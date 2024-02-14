@@ -8,13 +8,14 @@ This system is designed to predict the placement status of students based on var
 ### Sections:
 
 1. **Introduction**
-   - Brief overview of the Placement Prediction and Analysis System.
+   - A predictive tool for assessing students' placement prospects based on a custom dataset and machine learning models.
 
 2. **Technologies Used**
-   - List of technologies and libraries used in the project.
+   - Python, SQLite, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn
 
 3. **Data Acquisition**
    - Creation of dataset using Excel and storage in SQLite database.
+   - Data was exported to a SQLite database using SQL commands.
 
 4. **Exploratory Data Analysis (EDA)**
    - Visualization of dataset characteristics such as college tier distribution, average 12th marks by tier, subjects distribution, etc.
@@ -23,7 +24,8 @@ This system is designed to predict the placement status of students based on var
    - Conversion of categorical variables to numerical format for model training.
 
 6. **Model Training**
-   - Training various machine learning models and evaluating their performance metrics on the test set.
+   - Utilization of machine learning models including Logistic Regression, Decision Tree, Random Forest, Support Vector Machine, and K-Nearest Neighbors.
+     Evaluation of model performance with accuracy scores for each model.
 
 7. **Prediction**
    - Interactive prediction interface for evaluating a new candidate's placement status based on user-provided information.
@@ -52,6 +54,57 @@ This system is designed to predict the placement status of students based on var
    - Execute the main Python script.
 
 ---
+
+4.**Model Training and Performance:**
+----------------------------------
+Model performance for Test set: Logisitic Regression
+- Accuracy: 98.0000
+- Fl score: 98.3897
+- Precision: 99.1429
+- Recall: 98.0000
+===================================
+
+
+----------------------------------
+Model performance for Test set: Decision Tree
+- Accuracy: 100.0000
+- Fl score: 100.0000
+- Precision: 100.0000
+- Recall: 100.0000
+===================================
+
+
+----------------------------------
+Model performance for Test set: Random Forest
+- Accuracy: 100.0000
+- Fl score: 100.0000
+- Precision: 100.0000
+- Recall: 100.0000
+===================================
+
+
+----------------------------------
+Model performance for Test set: Support Vector Machine
+- Accuracy: 99.0000
+- Fl score: 98.7525
+- Precision: 99.0101
+- Recall: 99.0000
+===================================
+
+
+----------------------------------
+Model performance for Test set: K-Nearest Neighbors
+- Accuracy: 99.5000
+- Fl score: 99.4506
+- Precision: 99.5025
+- Recall: 99.5000
+===================================
+
+- These accuracy scores demonstrate the performance of each model in predicting the placement status of students.
+- Among these models, K-Nearest Neighbors (KNN)--99.5% and Support Vector Machine (SVM) accuracy is 99%, followed by Logistic Regression exhibited slightly lower accuracy at 98%.
+- Decision Tree and Random Forest achieved the highest accuracy of 100%.
+
+------
 
 ### Usage:
 
