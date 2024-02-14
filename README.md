@@ -1,48 +1,42 @@
 # placement_prediction_and_analysis_system
 **Placement Prediction and Analysis System**
 
-This system, developed by Vishal V V, offers a comprehensive solution for predicting and analyzing placement outcomes for students. Leveraging a self-created dataset and utilizing SQL for data export, it empowers users to explore, understand, and predict placement probabilities based on a variety of factors. Furthermore, it facilitates the addition of new candidate data through user input, ensuring real-time evaluation and insights.
+This system is designed to predict the placement status of students based on various factors such as academic performance, internship status, aptitude scores, knowledge of data structures and algorithms, and project involvement. The dataset used in this project was created manually using Excel and then imported into a SQLite database using SQL. New candidate data provided by the user is inserted into the database for prediction. The system utilizes machine learning models including Logistic Regression, Decision Tree, Random Forest, Support Vector Machine, and K-Nearest Neighbors for prediction, with their respective accuracies reported for evaluation.
 
 ---
 
-### Technologies Used:
+### Sections:
 
-- Python
-- SQLite
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Plotly
-- Scikit-learn
+1. **Introduction**
+   - Brief overview of the Placement Prediction and Analysis System.
 
-### Data Acquisition:
+2. **Technologies Used**
+   - List of technologies and libraries used in the project.
 
-The system employs a self-created dataset, meticulously curated to capture various attributes influencing placement outcomes. The data is imported into a SQLite database using Python's Pandas library, enabling seamless storage and retrieval for analysis and modeling.
+3. **Data Acquisition**
+   - Creation of dataset using Excel and storage in SQLite database.
 
-### Exploratory Data Analysis (EDA):
+4. **Exploratory Data Analysis (EDA)**
+   - Visualization of dataset characteristics such as college tier distribution, average 12th marks by tier, subjects distribution, etc.
 
-Through visualizations generated using Matplotlib, Seaborn, and Plotly, the system offers a detailed EDA of the dataset. Users can explore trends, distributions, and correlations among different features, gaining valuable insights into factors affecting placement success.
+5. **Data Preprocessing**
+   - Conversion of categorical variables to numerical format for model training.
 
-### Data Preprocessing:
+6. **Model Training**
+   - Training various machine learning models and evaluating their performance metrics on the test set.
 
-Before model training, the dataset undergoes preprocessing steps such as categorical variable conversion and scaling. This ensures optimal performance of machine learning algorithms in predicting placement outcomes.
+7. **Prediction**
+   - Interactive prediction interface for evaluating a new candidate's placement status based on user-provided information.
 
-### Model Training:
+8. **Dataset Export**
+   - Exporting the updated dataset to a CSV file after inserting new candidate data.
 
-The system trains multiple machine learning models, including Logistic Regression, Decision Tree, Random Forest, Support Vector Machine, and K-Nearest Neighbors. Each model's performance metrics are evaluated to determine its efficacy in predicting placement probabilities.
-
-### Prediction:
-
-Users can input candidate details through an interactive interface, enabling the system to predict placement status based on the provided information. The addition of new candidate data enriches the dataset and enhances prediction accuracy.
-
-### Dataset Export:
-
-Utilizing SQL, the system exports the updated dataset to a CSV file after incorporating new candidate data. This ensures data integrity and enables further analysis or model retraining.
+9. **Comparative Analysis**
+   - Visualization depicting the comparative analysis of different models based on their test accuracies.
 
 ---
 
-### Usage:
+### Installation:
 
 1. **Clone the repository:**
    ```
@@ -55,17 +49,31 @@ Utilizing SQL, the system exports the updated dataset to a CSV file after incorp
    ```
 
 3. **Run the Application:**
-   - Execute the main Python script to explore, analyze, and predict placement outcomes.
-
-4. **Contribute:**
-   - Feel free to contribute to the dataset or codebase to enhance system functionality and accuracy.
+   - Execute the main Python script.
 
 ---
 
-### Contributor:
+### Usage:
 
-**Vishal V V**
+1. **Data Acquisition:**
+   - The dataset was created manually using Excel and then imported into the SQLite database using SQL.
+
+2. **Exploratory Data Analysis (EDA):**
+   - Visualize dataset characteristics using provided functions.
+
+3. **Model Training:**
+   - Train multiple machine learning models on the dataset.
+
+4. **Prediction:**
+   - Input candidate details through the interactive interface to predict placement status.
+
+---
+
+### Contributors:
+- **Vishal V V**
+
+### Acknowledgments:
+- Libraries and resources utilized for this project are credited accordingly within the code.
 
 ### License:
-
-- This project is licensed under the MIT License - see the [LICENSE.md](link) file for details.
+- This project is licensed under the [MIT License](link) - see the [LICENSE.md](link) file for details.
